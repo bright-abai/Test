@@ -1,0 +1,153 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqvhgu2p6vtrj"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_6exrs"]
+[ext_resource type="Theme" uid="uid://fmkrcpsmrc8n" path="res://misc/theme.tres" id="2_3n3ei"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8odsy"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3ro3t"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6exrs")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8odsy")
+
+[node name="Question" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -720.0
+offset_top = 95.0
+offset_right = 720.0
+offset_bottom = 295.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 64
+text = "What is the capital of Great Britain?"
+
+[node name="Answers" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -643.0
+offset_top = -244.0
+offset_right = 650.0
+offset_bottom = 301.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="A" type="Button" parent="Answers"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_3n3ei")
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+toggle_mode = true
+action_mode = 0
+text = "Some
+"
+
+[node name="B" type="Button" parent="Answers"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_3n3ei")
+toggle_mode = true
+action_mode = 0
+text = "Another"
+
+[node name="C" type="Button" parent="Answers"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_3n3ei")
+toggle_mode = true
+action_mode = 0
+text = "Maybe this one"
+
+[node name="D" type="Button" parent="Answers"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_3n3ei")
+toggle_mode = true
+action_mode = 0
+text = "extends Control"
+
+[node name="Timer" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 77.0
+offset_top = 1020.0
+offset_right = -77.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3ro3t")
+
+[node name="Confirm" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = 342.0
+offset_right = 124.0
+offset_bottom = 442.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_3n3ei")
+text = "Confirm"
+
+[node name="QuestionCount" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -154.0
+offset_top = 40.0
+offset_right = -54.0
+offset_bottom = 107.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+text = "1/20"
+
+[node name="TestScore" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -154.0
+offset_top = 106.0
+offset_right = -54.0
+offset_bottom = 173.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.99, 0.99, 0.99, 1)
+theme_override_font_sizes/font_size = 48
+text = "1 pt"

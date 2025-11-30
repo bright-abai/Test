@@ -1,0 +1,171 @@
+[gd_scene load_steps=7 format=3 uid="uid://c84rh2556for0"]
+
+[ext_resource type="Script" path="res://welcome.gd" id="1_tgoxh"]
+[ext_resource type="Theme" uid="uid://fmkrcpsmrc8n" path="res://misc/theme.tres" id="2_86yvt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxbli"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yan4j"]
+font_size = 96
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_nvvlw"]
+font_size = 48
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_54atb"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[node name="Welcome" type="Control" node_paths=PackedStringArray("R10", "R11", "P7", "P8", "P9", "P10", "P11")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tgoxh")
+R10 = NodePath("box/R10")
+R11 = NodePath("box/R11")
+P7 = NodePath("box/P7")
+P8 = NodePath("box/P8")
+P9 = NodePath("box/P9")
+P10 = NodePath("box/P10")
+P11 = NodePath("box/P11")
+
+[node name="panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mxbli")
+
+[node name="welcome" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.5
+offset_top = -382.0
+offset_right = 540.5
+offset_bottom = -250.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Welcome to the IT Test!
+"
+label_settings = SubResource("LabelSettings_yan4j")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="please" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -228.0
+offset_right = 375.0
+offset_bottom = -140.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Please select your grade
+"
+label_settings = SubResource("LabelSettings_nvvlw")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="box" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -673.0
+offset_top = -40.0
+offset_right = 673.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="R10" type="Button" parent="box"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_86yvt")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_54atb")
+text = "10А"
+
+[node name="R11" type="Button" parent="box"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_86yvt")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_54atb")
+text = "11А
+11Б"
+
+[node name="P7" type="Button" parent="box"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_86yvt")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_54atb")
+text = "7PA
+7PB
+"
+
+[node name="P8" type="Button" parent="box"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_86yvt")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_54atb")
+text = "8P
+"
+
+[node name="P9" type="Button" parent="box"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_86yvt")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_54atb")
+text = "9P
+"
+
+[node name="P10" type="Button" parent="box"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_86yvt")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_54atb")
+text = "10P
+"
+
+[node name="P11" type="Button" parent="box"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_86yvt")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_54atb")
+text = "11P
+"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="QuestionSet" load_steps=2 format=3 uid="uid://2wu7033w5wch"]
+
+[ext_resource type="Script" path="res://tests/question_set.gd" id="1_jv075"]
+
+[resource]
+script = ExtResource("1_jv075")
+questions_data = "#1
+What is the capital of Great Britain?
+<n> Paris of the France that is located inside
+<y> London
+<n> Moscow
+/
+
+#2
+What color is the sky?
+<n> Green
+<y> Blue
+<n> Red
+/"

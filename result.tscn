@@ -1,0 +1,132 @@
+[gd_scene load_steps=7 format=3 uid="uid://556vahfi3qm5"]
+
+[ext_resource type="Script" path="res://result.gd" id="1_f7c6a"]
+[ext_resource type="Theme" uid="uid://fmkrcpsmrc8n" path="res://misc/theme.tres" id="1_splso"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msclu"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hutbo"]
+font_size = 96
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rlc1k"]
+font_size = 48
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ru6qv"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[node name="Result" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f7c6a")
+
+[node name="panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_msclu")
+
+[node name="welcome" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.5
+offset_top = -382.0
+offset_right = 540.5
+offset_bottom = -250.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "You have finished the test"
+label_settings = SubResource("LabelSettings_hutbo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="please" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -228.0
+offset_right = 375.0
+offset_bottom = -140.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Please enter your surname and name:
+"
+label_settings = SubResource("LabelSettings_rlc1k")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="student_name_edit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -577.0
+offset_top = -44.0
+offset_right = 577.0
+offset_bottom = 44.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_splso")
+alignment = 1
+
+[node name="result" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -440.5
+offset_top = 162.0
+offset_right = 440.5
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Your result is:"
+label_settings = SubResource("LabelSettings_rlc1k")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="quit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -131.0
+offset_right = 86.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+theme = ExtResource("1_splso")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_ru6qv")
+text = "Quit"
