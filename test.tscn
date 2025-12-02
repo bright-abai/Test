@@ -1,10 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqvhgu2p6vtrj"]
+[gd_scene load_steps=7 format=3 uid="uid://dqvhgu2p6vtrj"]
 
 [ext_resource type="Script" path="res://test.gd" id="1_6exrs"]
 [ext_resource type="Theme" uid="uid://fmkrcpsmrc8n" path="res://misc/theme.tres" id="2_3n3ei"]
+[ext_resource type="Shader" path="res://misc/timer.gdshader" id="3_2qfj7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8odsy"]
 bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_roa0f"]
+shader = ExtResource("3_2qfj7")
+shader_parameter/progress = 1.0
+shader_parameter/fill_color = Color(0, 0, 0, 1)
+shader_parameter/bg_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.5
+shader_parameter/smoothness = 0.01
+shader_parameter/start_angle = 3.14
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3ro3t"]
 bg_color = Color(0, 0, 0, 1)
@@ -96,14 +106,15 @@ action_mode = 0
 text = "extends Control"
 
 [node name="Timer" type="Panel" parent="."]
+material = SubResource("ShaderMaterial_roa0f")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 77.0
-offset_top = 1020.0
-offset_right = -77.0
-offset_bottom = -45.0
+offset_left = 1741.0
+offset_top = 128.0
+offset_right = -29.0
+offset_bottom = -802.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_3ro3t")
@@ -143,11 +154,11 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -154.0
-offset_top = 106.0
-offset_right = -54.0
-offset_bottom = 173.0
+offset_left = -1848.0
+offset_top = 109.0
+offset_right = -1748.0
+offset_bottom = 176.0
 grow_horizontal = 0
-theme_override_colors/font_color = Color(0.99, 0.99, 0.99, 1)
+theme_override_colors/font_color = Color(0.97, 0.97, 0.97, 1)
 theme_override_font_sizes/font_size = 48
 text = "1 pt"

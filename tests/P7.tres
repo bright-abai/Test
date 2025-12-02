@@ -5,15 +5,96 @@
 [resource]
 script = ExtResource("1_6ixo5")
 questions_data = "#1
-What is the capital of Great Britain?
-<n> Paris of the France that is located inside
-<y> London
-<n> Moscow
+What type of computer device is monitor?
+<y> Output
+<n> Input
+<n> Processing
+<n> Storage
 /
 
 #2
-What color is the sky?
-<n> Green
-<y> Blue
-<n> Red
-/"
+What type of computer device is keyboard?
+<y> Input
+<n> Output
+<n> Processing
+<n> Storage
+/
+
+#3
+What type of computer device is hard disk drive?
+<n> Input
+<n> Output
+<n> Processing
+<y> Storage
+/
+
+#4
+What type of computer device is Central Processing Unit?
+<n> Input
+<n> Output
+<y> Processing
+<n> Storage
+/
+
+#5
+What is not an operating system?
+<n> Windows
+<n> Linux
+<n> Android
+<y> Lenovo
+/
+
+#6
+Why operating system is needed?
+<y> To control computer’s resources
+<y> To run apps and programs
+<y> For protection 
+<n> For controlling your life
+/
+
+#7
+When BIOS is run?
+<y> Before operating system
+<n> After operating system
+/
+
+#8
+Divide files into two disks, “C” and “D”
+<y> Windows
+<n> Linux
+<n> MacOs
+<n> Android
+/
+
+#9
+Python: variable can be used to manipulate data
+<y> Program can be made without using variables
+<y> Variables make it easy for the programmer
+<y> A proper name for the variable is desired
+<y> A variable can be integer or string
+/
+
+#10
+How to get the first letter of string?
+<y> word[0]
+<n> word[1]
+<n> word[first]
+<n> word[len(word) – 1]
+/
+
+#11
+Program can check conditions using if, elif and else
+<y> true
+<n> false
+/
+
+#12
+Program can check not equal using operator
+<y> ==
+<n> !=
+/
+
+#13
+Remainder can be calculated using number % x
+<y> true
+<n> false"

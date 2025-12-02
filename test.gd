@@ -50,7 +50,9 @@ func _process(delta):
 	timer -= delta
 	if (timer < 0):
 		next_question()
-	timer_panel.size.x = timer / question_time * timer_panel_size
+	var shader_mat = timer_panel.material as ShaderMaterial
+	shader_mat.set_shader_parameter("progress", timer / question_time)
+	#timer_panel.size.x = timer / question_time * timer_panel_size
 
 func prepare_question_set(resource_name):
 	question_set = load(resource_name) as QuestionSet

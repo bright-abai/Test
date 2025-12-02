@@ -13,7 +13,7 @@ config_version=5
 config/name="Test"
 run/main_scene="res://welcome.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://misc/icon.svg"
+config/icon="res://misc/bitmap.svg"
 
 [autoload]
 
