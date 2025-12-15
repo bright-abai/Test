@@ -5,96 +5,163 @@
 [resource]
 script = ExtResource("1_6ixo5")
 questions_data = "#1
-What type of computer device is monitor?
-<y> Output
-<n> Input
-<n> Processing
-<n> Storage
-/
+Which of the following describes binary?
+<n> number system consisting of 0, 1, 2
+<y> it is based on powers of 2
+<n> it is based on powers of bins
+<n> it is used by humans to communicate with computers
+<e>
 
 #2
-What type of computer device is keyboard?
-<y> Input
-<n> Output
-<n> Processing
-<n> Storage
-/
+What does the binary number 1010 equal in denary (base 10)?
+<n> 8
+<y> 10
+<n> 12 
+<n> 13
+<e>
 
 #3
-What type of computer device is hard disk drive?
-<n> Input
-<n> Output
-<n> Processing
-<y> Storage
-/
+Which of these is NOT a valid binary number?
+<y> 1a01
+<n> 1001
+<y> 1020
+<n> 1111
+<e>
 
 #4
-What type of computer device is Central Processing Unit?
-<n> Input
-<n> Output
-<y> Processing
-<n> Storage
-/
+How would you write the denary number 7 in binary?
+<n> 101
+<n> 110
+<y> 111
+<n> 1000
+<e>
 
 #5
-What is not an operating system?
-<n> Windows
-<n> Linux
-<n> Android
-<y> Lenovo
-/
+A touchscreen on a tablet serves as both an input and output device. Which other device also functions in BOTH categories?
+<n> Printer
+<y> Headset with microphone
+<n> Keyboard
+<n> Monitor
+<e>
 
 #6
-Why operating system is needed?
-<y> To control computer’s resources
-<y> To run apps and programs
-<y> For protection 
-<n> For controlling your life
-/
+Which of the following devices is primarily a STORAGE device rather than a processing device?
+<n> CPU (Central Processing Unit)
+<n> GPU (Graphics Processing Unit)
+<y> SSD (Solid State Drive)
+<n> Registers
+<e>
 
 #7
-When BIOS is run?
-<y> Before operating system
-<n> After operating system
-/
+A student is using a computer to edit a video. Which sequence correctly shows the flow of data through device categories?
+<y> Input → Storage → Processing → Output
+<n> Storage → Input → Output → Processing
+<n> Processing → Input → Storage → Output
+<n> Output → Processing → Input → Storage
+<e>
 
 #8
-Divide files into two disks, “C” and “D”
-<y> Windows
-<n> Linux
-<n> MacOs
-<n> Android
-/
+RAM (Random Access Memory) is often confused with storage devices like hard drives. What makes RAM different from a hard drive?
+<n> RAM is much larger in capacity
+<y> RAM loses all data when the computer turns off
+<n> RAM is used only for saving documents
+<n> RAM is an input device, not a storage device
+<e>
 
-#9
-Python: variable can be used to manipulate data
-<y> Program can be made without using variables
-<y> Variables make it easy for the programmer
-<y> A proper name for the variable is desired
-<y> A variable can be integer or string
-/
+#9 
+What will happen when you run this code: print(5 + 3 * 2) 
+<n> It will print 16 
+<y> It will print 11 
+<n> It will show an error 
+<y> Multiplication happens before addition 
+<e>
 
-#10
-How to get the first letter of string?
-<y> word[0]
-<n> word[1]
-<n> word[first]
-<n> word[len(word) – 1]
-/
+#10 
+Which of these are comparison operators in Python?
+<y> == 
+<y> != 
+<n> = 
+<y> >= 
+<e>
 
 #11
-Program can check conditions using if, elif and else
-<y> true
-<n> false
-/
+Which statements about the input() function are true?
+<y> It pauses the program and waits for user input 
+<y> It always returns a string 
+<n> It automatically converts input to an integer 
+<y> You can add a prompt message inside the parentheses 
+<e>
 
-#12
-Program can check not equal using operator
-<y> ==
-<n> !=
-/
+#12 
+Which data types exist in Python? 
+<y> int (integer) 
+<y> str (string)
+<y> bool (boolean)
+<n> char (character)
+<e>
 
-#13
-Remainder can be calculated using number % x
-<y> true
-<n> false"
+#13 
+Which are correct ways to use an if statement in Python? 
+<y> if age > 12: 
+<n> if age > 12 
+<y> if score == 100: 
+<n> if (score == 100) 
+<e>
+
+#14 
+How to access the first letter of a string ‘name’ ?
+<n> name{0}
+<y> name[0]
+<n> name{1}
+<n> name.firstletter()
+<e>
+
+#15
+What are hotkeys used for quick editing of text?
+<y> Ctrl + C (copy) 
+<y> Ctrl + V (paste)
+<y> Ctrl + A (select everything)
+<n> Ctrl + Shift + Esc (delete everything)
+<e>
+
+#16
+Which of the following are examples of operating systems? 
+<y> Windows 
+<y> macOS 
+<y> Linux 
+<n> Microsoft Word 
+<e>
+
+#17
+What are the main jobs of an operating system? 
+<y> Managing files and folders 
+<y> Running programs and applications 
+<n> Creating documents and presentations 
+<y> Controlling hardware like keyboard and mouse 
+<e>
+
+#18 
+Which statements about operating systems are true? 
+<y> An operating system is software that manages computer hardware 
+<n> You can use a computer without an operating system
+<y> The operating system provides a user interface 
+<y> It helps different programs share the computer's memory and processor 
+<e>
+
+#19
+Which of the following describe what a file is? 
+<y> Anything that can be stored on a computer
+<y> It can contain text, images, videos, or programs 
+<y> Files are stored in folders on a hard drive or USB 
+<n> A file is a physical object you can touch
+<e>
+
+#20
+Which of the following are valid Windows file paths? 
+<y> C:\\Users\\Student\\Documents\\homework.txt 
+<n> C:/Users/Student/Documents/homework.txt 
+<y> D:\\Photos\\vacation.jpg
+<n> My File\\report.docx 
+<e>
+
+"

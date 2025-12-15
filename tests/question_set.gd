@@ -14,7 +14,7 @@ var answer_regex := RegEx.new()
 
 
 func initialize():
-	question_block_regex.compile(r"#\d+\s+(.*?)\s*(?:(?:<n>|<y>).+?\s*)+/")
+	question_block_regex.compile(r"#\d+\s+(.*?)\s*(?:(?:<n>|<y>).+?\s*)+<e>")
 	answer_regex.compile(r"<(n|y)>\s*(.+)")
 
 	var question_index = 0
