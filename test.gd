@@ -1,7 +1,7 @@
 extends Control
 
-var timer_panel: Panel;
-var timer_panel_size: float
+var timer_label: Label
+var timer_hourglass: TextureRect
 var timer: float
 var question_time: float = 30
 
@@ -22,9 +22,7 @@ var selected_answers: Array
 var test_score: int
 
 func _ready():
-	timer_panel = find_child("Timer") as Panel;
-	timer_panel_size = timer_panel.size.x
-	timer = question_time
+	timer_label = find_child("Timer") as Label;
 	
 	confirm_btn = find_child("Confirm") as Button
 	confirm_btn.pressed.connect(confirm_answer)
@@ -32,6 +30,8 @@ func _ready():
 	question_count = question_set.get_question_count()
 	question_label = find_child("Question") as RichTextLabel
 	question_count_label = find_child("QuestionCount") as Label
+	question_count_label.text = "%s ?" % question_count
+	
 	test_score = 0
 	test_score_label = find_child("TestScore") as Label
 	test_score_label.text = "%s pt" % test_score
@@ -47,12 +47,10 @@ func _ready():
 	next_question()
 
 func _process(delta):
-	timer -= delta
-	if (timer < 0):
+	timer += delta
+	if (timer > question_time):
 		next_question()
-	var shader_mat = timer_panel.material as ShaderMaterial
-	shader_mat.set_shader_parameter("progress", timer / question_time)
-	#timer_panel.size.x = timer / question_time * timer_panel_size
+	timer_label.text = "%ss" % roundi(question_time - timer)
 
 func prepare_question_set(resource_name):
 	question_set = load(resource_name) as QuestionSet
@@ -63,11 +61,10 @@ func next_question():
 		finish_test()
 		return
 		
-	timer = question_time
+	timer = 0
 	
 	current_question = question_set.get_next_question()
 	question_label.text = "%s. %s" % [question_number, current_question.question]
-	question_count_label.text = "%s/%s" % [question_number, question_count]
 	question_number += 1
 	
 	for btn in answer_btns:
