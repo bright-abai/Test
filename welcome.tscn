@@ -120,6 +120,7 @@ text = "11А
 11Б"
 
 [node name="P7" type="Button" parent="box"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_86yvt")
@@ -131,6 +132,7 @@ text = "7PA
 "
 
 [node name="P8" type="Button" parent="box"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_86yvt")
@@ -141,6 +143,7 @@ text = "8P
 "
 
 [node name="P9" type="Button" parent="box"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_86yvt")

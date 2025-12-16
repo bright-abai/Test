@@ -5,15 +5,141 @@
 [resource]
 script = ExtResource("1_hfvov")
 questions_data = "#1
-What is the capital of Great Britain?
-<n> Paris of the France that is located inside
-<y> London
-<n> Moscow
-/
+What does a blockchain mainly consist of?
+<y> A series of connected blocks with data and encrypted hashes
+<n> A centralized database
+<n> A collection of unrelated files
+<n> A traditional database with additional security
+<e>
 
 #2
-What color is the sky?
-<n> Green
-<y> Blue
-<n> Red
-/"
+What happens if someone tries to change data in a previous block of the blockchain?
+<n> The change is automatically accepted by other participants
+<y> The hash of that block changes, breaking the chain and making the change obvious
+<n> Only the administrator can notice the change
+<n> The blockchain automatically restores itself
+<e>
+
+#3
+Is the transaction history in a blockchain known to every participant?
+<y> Yes
+<n> No
+<n> Depends on the context
+<e>
+
+#4
+Why use a license?
+<y> To give permission to others to use your work under certain conditions
+<n> To automatically make your work public and free
+<n> To permanently prohibit the use of your work
+<n> To transfer your work to the government
+<e>
+
+#5
+What is open-source?
+<n> A program whose source code is publicly available for viewing and modification
+<y> A program that is always free and cannot be sold
+<n> A program that can only be used in educational institutions
+<n> A program owned by the UN
+<e>
+
+#6
+How do you create a variable in C++?
+<y> int x = 10;
+<n> variable x = 10;
+<n> declare int x = 10;
+<n> x := 10
+<e>
+
+#7
+How do you read a number in C++?
+<n> cin << x;
+<y> cin >> x;
+<n> cout << x;
+<n> cout >> x;
+<e>
+
+#8
+How do you output a number in C++?
+<n> cin << x;
+<n> cin >> x;
+<y> cout << x;
+<n> cout >> x;
+<e>
+
+#9
+How do you calculate the sum of two variables a and b?
+<n> sum = \"a\" + \"b\";
+<y> sum = a + b;
+<y> sum = b + a;
+<y> x = a + b;
+<e>
+
+#10
+What is a valid IP address?
+<y> 192.168.104.1;
+<y> 0.0.0.0;
+<n> 256.257.258;
+<y> 1.2.3.4;
+<e>
+
+#11
+What is DNS?
+<n> A protocol for automatically assigning IP addresses to devices
+<y> A system that translates domain names into IP addresses
+<n> A unique hardware address of a network adapter
+<n> A protocol for encrypting data on a network
+<e>
+
+#12
+What does DHCP do?
+<y> Automatically assigns IP addresses to devices on a network
+<n> Translates domain names into IP addresses
+<n> Is a permanent hardware address of a device
+<n> Protects the network from viruses and malware
+<e>
+
+#13
+How do you swap the first two letters of a string stored in the variable text?
+<y> Create a temporary variable
+<n> Use text[1] = text[2]
+<y> Use text[0] = text[1]
+<e>
+
+#14
+What is NOT an operating system?
+<n> Windows
+<n> Android
+<n> Linux
+<y> Lenovo
+<e>
+
+#15
+Which statements are correct?
+<n> 1 kilobyte (KB) equals 1024 bytes
+<y> 1 mebibyte (MiB) equals 1024 kilobytes
+<y> 1 gigabyte (GB) equals 1000 megabytes
+<y> 1 kibibyte (KiB) equals 1024 bytes
+<e>
+
+#16
+What is a correct statement in pseudocode?
+<y> DECLARE Number : INTEGER
+<n> READ Number
+<n> WRITE Number
+<n> Number = 10
+<e>
+
+#17
+What is the correct binary representation of the number 35?
+<y> 100011
+<n> 101100
+<n> 101001
+<n> 011011
+
+#18
+What is the correct hex representation of the binary number 1001 0001 0011 1111
+<y> 913F
+<n> AB39
+<n> 9C67
+<n> A139"
