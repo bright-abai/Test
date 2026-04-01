@@ -1,7 +1,29 @@
-[gd_scene load_steps=7 format=3 uid="uid://c84rh2556for0"]
+[gd_scene load_steps=7 format=3 uid="uid://d181kdadmamm5"]
 
-[ext_resource type="Script" path="res://welcome.gd" id="1_tgoxh"]
 [ext_resource type="Theme" uid="uid://fmkrcpsmrc8n" path="res://misc/theme.tres" id="2_86yvt"]
+
+[sub_resource type="GDScript" id="GDScript_hp420"]
+script/source = "extends Control
+
+@export var R10: Button
+@export var R11: Button
+@export var P7: Button
+@export var P8: Button
+@export var P9: Button
+@export var P10: Button
+@export var P11: Button
+
+func _ready():
+	R10.pressed.connect(SceneLoader.load_test.bind(\"tests/R10.tres\"))
+	R11.pressed.connect(SceneLoader.load_test.bind(\"tests/R11.tres\"))
+	P7.pressed.connect(SceneLoader.load_test.bind(\"tests/P7.tres\"))
+	P8.pressed.connect(SceneLoader.load_test.bind(\"tests/P8.tres\"))
+	P9.pressed.connect(SceneLoader.load_test.bind(\"tests/P9.tres\"))
+	P10.pressed.connect(SceneLoader.load_test.bind(\"tests/P10.tres\"))
+	P11.pressed.connect(SceneLoader.load_test.bind(\"tests/P11.tres\"))
+	
+	R10.pressed.emit()
+"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxbli"]
 bg_color = Color(1, 1, 1, 1)
@@ -29,7 +51,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tgoxh")
+script = SubResource("GDScript_hp420")
 R10 = NodePath("box/R10")
 R11 = NodePath("box/R11")
 P7 = NodePath("box/P7")

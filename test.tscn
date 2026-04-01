@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dqvhgu2p6vtrj"]
 
-[ext_resource type="Script" path="res://test.gd" id="1_6exrs"]
+[ext_resource type="Script" uid="uid://cuietpt13lwlp" path="res://scripts/test.gd" id="1_6exrs"]
 [ext_resource type="Theme" uid="uid://fmkrcpsmrc8n" path="res://misc/theme.tres" id="2_3n3ei"]
-[ext_resource type="Texture2D" uid="uid://ch6a2rc55qut4" path="res://hourglass.png" id="3_7jkwj"]
+[ext_resource type="Texture2D" uid="uid://ch6a2rc55qut4" path="res://misc/hourglass.png" id="3_7jkwj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8odsy"]
 bg_color = Color(1, 1, 1, 1)

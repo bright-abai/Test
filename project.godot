@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="Test"
-run/main_scene="res://welcome.tscn"
-config/features=PackedStringArray("4.2", "GL Compatibility")
+run/main_scene="uid://dqvhgu2p6vtrj"
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://misc/bitmap.svg"
 
 [autoload]
 
-SceneLoader="*res://scene_loader.gd"
-TestScore="*res://test_score.gd"
+SceneLoader="*res://scripts/scene_loader.gd"
+TestScore="*res://scripts/test_score.gd"
 
 [display]
 
