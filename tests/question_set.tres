@@ -5,148 +5,82 @@
 [resource]
 script = ExtResource("1_1gwqn")
 questions_data = "#1
-Which of the following describes binary?
-<n> number system consisting of 0, 1, 2
-<y> it is based on powers of 2
-<n> it is based on powers of bins
-<n> it is used by humans to communicate with computers
+How data is represented in raster images?
+<y> by storing color data in every pixel
+<n> by drawing shapes and filling them later
+<n> by assigning each pixel with a unique color a number
+<y> most commonly each pixel has three channels: red, green, blue
 <e>
 
 #2
-What does the binary number 1010 equal in denary (base 10)?
-<n> 8
-<y> 10
-<n> 12 
-<n> 13
+What is color depth?
+<n> how many pixels there are in the image.
+<y> how many bits each pixel takes
+<y> how many possible colors the image can represent 
+<n> how many color channels the image has
+<e>
+
+#3
+What is image resolution?
+<y> total number of pixels in the image
+<y> pixels along width and height of the image
+<y> how many color channels the image has
+<n> how many bits each pixel takes
 <e>
 
 #4
-How would you write the denary number 7 in binary?
-<n> 101
-<n> 110
-<y> 111
-<n> 1000
+Which of the following are text encodings?
+<y> ASCII
+<y> Unicode
+<n> SSH
+<n> CMYK
 <e>
 
 #5
-What is more likely to change, if you want to add a new button to the webpage?
-<y> HTML
-<n> CSS
-<n> DNS
-<n> HTTPS
+On which text encoding there are more possible characters?
+<n> ASCII
+<y> Unicode
+<n> SSH
+<n> CMYK
 <e>
 
 #6
-Which of the following devices is primarily a STORAGE device rather than a processing device?
-<n> CPU (Central Processing Unit)
-<n> GPU (Graphics Processing Unit)
-<y> SSD (Solid State Drive)
-<n> Registers
+Which encoding takes only 1 byte for each character?
+<y> ASCII
+<n> Unicode
+<n> SSH
+<n> CMYK
 <e>
 
 #7
-How to change the background color of the whole page?
-<y> body { background-color: red; }
-<n> body { color: red; }
-<n> body { background-color=red; }
-<n> body { color= red; }
+Which encoding may take up to 4 bytes for each character?
+<n> ASCII
+<y> Unicode
+<n> SSH
+<n> CMYK
 <e>
 
-#8
-RAM (Random Access Memory) is often confused with storage devices like hard drives. What makes RAM different from a hard drive?
-<n> RAM is much larger in capacity
-<y> RAM loses all data when the computer turns off
-<n> RAM is used only for saving documents
-<n> RAM is an input device, not a storage device
+#8 
+How sound is represented?
+<y> by taking snapshots of sound wave
+<y> as a sequence of samples on some frequency
+<n> the same as video, moving images
+<n> as a perfect copy of sound wave
 <e>
 
 #9 
-What is the correct syntax for repeat 10 times in python?
-<y> for i in range(10):
-<y> while i < 10: ... i += 1
-<n> if i < 10:
-<n> else:
+What is sample rate?
+<y> How often samples are taken
+<y> The quality of the sound
+<n> How many bits are needed for each sample
+<n> The frequency of the sound wave
 <e>
 
-#10 
-File is:
-<y> document that can be stored and named in the folder on the computer
-<y> everything that is stored on the computer.
-<n> web page that is rendered by the browser
-<y> installed computer game that is played by everyone
+#10
+What is sample resolution?
+<n> How often samples are taken
+<y> The quality of the sound
+<y> How many bits are needed for each sample
+<n> The frequency of the sound wave
 <e>
-
-#11
-Which statements about the input() function are true?
-<y> It pauses the program and waits for user input 
-<y> It always returns a string 
-<n> It automatically converts input to an integer 
-<y> You can add a prompt message inside the parentheses 
-<e>
-
-#12 
-Which data types exist in Python? 
-<y> int (integer) 
-<y> str (string)
-<y> bool (boolean)
-<n> char (character)
-<e>
-
-#13 
-Which are correct ways to use an if statement in Python? 
-<y> if age > 12: 
-<n> if age > 12 
-<y> if score == 100: 
-<n> if (score == 100) 
-<e>
-
-#14 
-How to access the first letter of a string ‘name’ ?
-<n> name{0}
-<y> name[0]
-<n> name{1}
-<n> name.firstletter()
-<e>
-
-#15
-What hotkey is used to Copy?
-<y> Ctrl + C
-<n> Ctrl + V
-<n> Ctrl + A
-<n> Ctrl + Z
-<e>
-
-#16
-Which of the following are examples of operating systems? 
-<y> Windows 
-<y> macOS 
-<y> Linux 
-<n> Microsoft Word 
-<e>
-
-#17
-What are the main jobs of an operating system? 
-<y> Managing files and folders 
-<y> Running programs and applications 
-<n> Creating documents and presentations 
-<y> Controlling hardware like keyboard and mouse 
-<e>
-
-#18
-Which of the following are valid Windows absolute file paths? 
-<y> C:\\Users\\student\\Documents\\homework.txt 
-<n> C:/Users/student/Documents/homework.txt 
-<y> D:\\Photos\\vacation.jpg
-<n> My File\\report.docx 
-<e>
-
-#19
-What HTML element is used to create a paragraph?
-<y> <p></p>
-<n> <paragraph>
-<n> <img src=\"\">
-<n> just write the text
-<e>
-
-
 "
